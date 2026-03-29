@@ -2,27 +2,44 @@
 ### ET AI Hackathon 2026 — PS 6: AI for the Indian Investor
 
 > Not a summarizer. A signal-finder.
+> This project demonstrates a production-style multi-agent AI system for real-time investor decision intelligence.
 
 An AI agent system that continuously monitors NSE/BSE corporate filings, insider trades, bulk/block deals, quarterly results, and management commentary — surfacing missed investment opportunities as actionable, plain-English signals for retail investors.
 
 ---
 
-## Team
-- Member 1: [Your Name]
-- Member 2: [Your Name]
+## Demo Video
+[Watch Demo](https://drive.google.com/file/d/11xR9kQ3LRwYA_r5LI9Ou83EqeuUQUhoB/view?usp=drive_link)
+
+## Presentation
+[View PPT](https://drive.google.com/file/d/1A50Ik5X4zSRbc9VZsdrJ0KQ5ECClgJAd/view?usp=drive_link)
+
+## 👥 Team : FutureMinds
+- Mohit : Backend Development & System Integration
+- Prachi Singh : AI Systems & User Experience Design
 
 ---
 
-## Problem
+## 📌 Problem
 India has 14 crore+ demat accounts. Most retail investors react to tips, miss filings, and can't read signals buried in exchange data. ET Markets has the data. We built the intelligence layer.
 
-## Solution
+---
+
+## 💡 Solution
 Opportunity Radar is a multi-agent AI system with 5 specialized agents:
 - **FilingWatcher** — monitors BSE/NSE exchange filings in real time
 - **InsiderTracker** — detects insider trade clusters before price moves
 - **SentimentAnalyser** — reads management commentary for tone shifts
 - **SignalRanker** — scores and ranks signals by actionability
 - **AlertDispatcher** — delivers plain-English alerts to the dashboard
+
+---
+
+## 🧠 Key Innovation
+- Multi-agent architecture instead of a single AI model  
+- Real-time monitoring of filings + insider trades  
+- Intelligent signal ranking for decision-making  
+- Plain-English alerts for non-expert users  
 
 ---
 
@@ -37,6 +54,16 @@ Opportunity Radar is a multi-agent AI system with 5 specialized agents:
 | Database | PostgreSQL + Redis (cache) |
 | Queue | Celery + Redis |
 | Deployment | Docker + Docker Compose |
+
+---
+
+## 📊 Impact
+- Helps retail investors detect opportunities early  
+- Reduces dependency on tips and speculation  
+- Converts complex financial data into simple insights  
+- Scalable for millions of Indian investors  
+
+> If adopted by 1 lakh users, Opportunity Radar can help prevent crores in uninformed investment losses every month.
 
 ---
 
@@ -77,7 +104,6 @@ docker-compose up --build
 
 App runs at: http://localhost:5173
 API runs at: http://localhost:8000
-API Docs at: http://localhost:8000/docs
 
 ---
 
@@ -94,20 +120,6 @@ opportunity-radar/
 
 ---
 
-## Agent Architecture
-See `docs/architecture.md` for full diagram and description.
-
----
-
-## Impact Model
-See `docs/impact_model.md` for quantified business impact estimates.
-
----
-
-## Demo
-[Link to 3-minute pitch video]
-
----
 
 ## License
 MIT
